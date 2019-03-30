@@ -104,6 +104,14 @@ ul {
 .lt-main .container-fluid.hidemenu {
   padding: 0px;
 }
+.lt-main .lt-content {
+  padding-left: 190px;
+}
+.lt-main .echarts_1,
+.lt-main .echarts_2 {
+  width: 48%;
+  height: 400px;
+}
 .lt-main.hidemenu {
   padding: 0px;
 }
