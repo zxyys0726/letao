@@ -1,0 +1,109 @@
+a,
+a:link,
+a:hover,
+a:visited a:active {
+  text-decoration: none;
+}
+.f-red {
+  color: red;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt-aside {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
+}
+.lt-aside .band {
+  width: 100%;
+  height: 50px;
+  background-color: #367FA9;
+  text-align: center;
+  line-height: 50px;
+}
+.lt-aside .band a {
+  color: #fff;
+  font-size: 23px;
+}
+.lt-aside .user {
+  height: 180px;
+  padding-top: 30px;
+}
+.lt-aside .user img {
+  height: 80px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.lt-aside .user p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.lt-aside .nav ul li a {
+  color: #fff;
+  padding-left: 40px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  border: 3px solid transparent;
+}
+.lt-aside .nav ul li a i {
+  margin-right: 5px;
+}
+.lt-aside .nav ul li a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt-aside .nav ul li .child a {
+  padding-left: 60px;
+}
+.lt-aside.hidemenu {
+  left: -180px;
+}
+.lt-main {
+  height: 1000px;
+  transition: all 1s;
+}
+.lt-main .topbar {
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  position: fixed;
+  padding-left: 180px;
+  transition: all 1s;
+}
+.lt-main .topbar a {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.lt-main .topbar.hidemenu {
+  padding: 0;
+}
+.lt-main .container-fluid {
+  padding-left: 180px;
+  transition: all 1s;
+}
+.lt-main .container-fluid .breadcrumb {
+  margin-top: 70px;
+}
+.lt-main .container-fluid.hidemenu {
+  padding: 0px;
+}
+.lt-main.hidemenu {
+  padding: 0px;
+}
