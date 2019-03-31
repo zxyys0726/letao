@@ -4,6 +4,9 @@ a:hover,
 a:visited a:active {
   text-decoration: none;
 }
+.mb_20{
+  margin-bottom: 20px;
+}
 .f-red {
   color: red;
 }
