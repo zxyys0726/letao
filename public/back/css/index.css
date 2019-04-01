@@ -4,9 +4,6 @@ a:hover,
 a:visited a:active {
   text-decoration: none;
 }
-.mb_20{
-  margin-bottom: 20px;
-}
 .f-red {
   color: red;
 }
@@ -109,6 +106,10 @@ ul {
 }
 .lt-main .lt-content {
   padding-left: 190px;
+  transition: all 1s;
+}
+.lt-main .lt-content.hidemenu {
+  padding: 0;
 }
 .lt-main .echarts_1,
 .lt-main .echarts_2 {

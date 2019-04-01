@@ -32,6 +32,7 @@ $(function(){
     $('.lt-main').toggleClass("hidemenu");
     $('.topbar').toggleClass("hidemenu");
     $('.container-fluid').toggleClass("hidemenu");
+    $('.lt-content').toggleClass("hidemenu");
   })
 
   $('.icon-logout').click(function(){
