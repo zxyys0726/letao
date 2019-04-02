@@ -1,0 +1,41 @@
+.lt_category_left {
+  height: 100%;
+  width: 90px;
+  position: relative;
+  float: left;
+}
+.lt_category_left li a {
+  width: 90px;
+  height: 50px;
+  background-color: #E3E4E5;
+  text-align: center;
+  color: #666;
+  display: block;
+  line-height: 50px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lt_category_left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
+.lt_category_right {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.lt_category_right li {
+  float: left;
+  width: 33.33%;
+}
+.lt_category_right li a {
+  display: block;
+}
+.lt_category_right li a img {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.lt_category_right li a p {
+  text-align: center;
+}
