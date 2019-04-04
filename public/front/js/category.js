@@ -19,7 +19,7 @@ $(function() {
 
   // 2. 通过事件委托, 给所有的左侧 a 绑定点击事件, 点击 a 切换显示二级分类
   $('.lt_category_left').on("click", "a", function(e) {
-    e.preventDefault();
+    // e.preventDefault();
     // 给自己添加 current, 让其他所有的 a 移除 current
     $(this).addClass("current").parent().siblings().find("a").removeClass("current");
 

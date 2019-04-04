@@ -91,3 +91,22 @@ img {
   height: 100%;
   position: relative;
 }
+.lt_container .lt_main .lt_search {
+  padding: 10px;
+  position: relative;
+}
+.lt_container .lt_main .lt_search input {
+  border: 1px solid #007AFF;
+  border-radius: 5px;
+  font-size: 12px;
+  height: 34px;
+  line-height: 34px;
+  margin: 0;
+  padding-right: 55px;
+}
+.lt_container .lt_main .lt_search button {
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
