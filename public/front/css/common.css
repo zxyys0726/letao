@@ -57,35 +57,6 @@ img {
   font-weight: normal;
   margin: 0;
 }
-.lt_container .lt_footer {
-  height: 55px;
-  width: 100%;
-  background-color: #006699;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.lt_container .lt_footer li {
-  float: left;
-  width: 25%;
-  text-align: center;
-}
-.lt_container .lt_footer li a {
-  color: #fff;
-  height: 55px;
-  display: block;
-  padding-top: 8px;
-}
-.lt_container .lt_footer li a p {
-  color: #fff;
-  margin: 0;
-}
-.lt_container .lt_footer li a.current {
-  color: orange;
-}
-.lt_container .lt_footer li a.current p {
-  color: orange;
-}
 .lt_container .lt_main {
   width: 100%;
   height: 100%;
@@ -109,4 +80,84 @@ img {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.lt_container .lt_main .lt-product {
+  padding: 10px;
+  position: relative;
+}
+.lt_container .lt_main .lt-product li {
+  float: left;
+  width: 48%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.lt_container .lt_main .lt-product li a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+.lt_container .lt_main .lt-product li a .price {
+  color: red;
+}
+.lt_container .lt_main .lt-product li a .old_price {
+  text-decoration: line-through;
+}
+.lt_container .lt_main .lt-product li a img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.lt_container .lt_main .lt-product li a .mui-ellipsis-2 {
+  height: 42px;
+}
+.lt_container .lt_main .lt-product li:nth-child(2n+1) {
+  margin-right: 4%;
+}
+.lt_container .lt_main .lt-product .loading {
+  width: 50px;
+  height: 50px;
+  border: 2px solid blue;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotate 1s infinite ease-in-out;
+}
+.lt_container .lt_footer {
+  height: 55px;
+  width: 100%;
+  background-color: #006699;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 666;
+}
+.lt_container .lt_footer li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.lt_container .lt_footer li a {
+  color: #fff;
+  height: 55px;
+  display: block;
+  padding-top: 8px;
+}
+.lt_container .lt_footer li a p {
+  color: #fff;
+  margin: 0;
+}
+.lt_container .lt_footer li a.current {
+  color: orange;
+}
+.lt_container .lt_footer li a.current p {
+  color: orange;
+}
+@keyframes rotate {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
 }

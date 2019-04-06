@@ -3,7 +3,6 @@ $(function () {
   // var jsonStr = JSON.stringify(arr);
   // localStorage.setItem('search_list',jsonStr);
 
-  var historyArr = [];
   render();
 
 
@@ -42,6 +41,11 @@ $(function () {
   $('.btn_search').click(function () {
     var str = $(this).siblings().val();
     if (str.trim() != '') {
+      var historyArr = getHistory();
+      var index = historyArr.indexOf(str);
+      if (index != -1) {
+        historyArr.splice(index,1);
+      }
       historyArr.unshift(str);
       setLocalStorage('search_list', historyArr);
       render();

@@ -18,7 +18,7 @@
     <!-- 头部 -->
     <div class="lt_header">
       <a href="javascript:history.back();" class="icon-left"><i class="mui-icon mui-icon-back"></i></a>
-      <h4>搜索中心</h4>
+      <h4>商品列表</h4>
     </div>
     <!-- 主体 -->
     <div class="lt_main">
@@ -26,10 +26,20 @@
         <div class="mui-scroll">
           <!-- 搜索框 -->
           <div class="lt_search">
-            <input type="text" placeholder="请输入搜索关键字">
+            <input type="text" placeholder="请输入搜索关键字" class="search_input">
             <button class="mui-btn mui-btn-primary btn_search">搜索</button>
           </div>
-          
+          <!-- 排序模块 -->
+          <div class="lt_sort">
+            <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
+            <a href="#" class="current" data-type="price">价格<i class="fa fa-angle-down"></i></a>
+            <a href="#" data-type="num">库存<i class="fa fa-angle-down" ></i></a>
+            <a href="#">折扣<i class="fa fa-angle-down"></i></a>
+          </div>
+          <!-- 商品模块 -->
+          <div class="lt-product">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -53,7 +63,28 @@
     </div>
   </div>
 
- 
+  <script type="text/html" id='listTpl'>
+    {{if data.length === 0}}
+    <p>没有您要搜索的商品</p>
+    {{else}}
+    <ul class="mui-clearfix">
+      {{each data v i}}
+      <li>
+        <a href="javascript:;" data-id='{{v.id}}'>
+          <img src="{{v.pic[0].picAddr}}" alt="">
+          <p class="mui-ellipsis-2">{{v.proName}}</p>
+          <p>
+            <span class="price">￥{{v.price}}</span>
+            <span class="old_price">{{v.oldPrice}}</span>
+          </p>
+          <button class="mui-btn mui-btn-primary buy-btn">立即购买</button>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </script>
+
 
   <script src="./lib/zepto/zepto.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
