@@ -1,0 +1,20 @@
+.lt_main .cart_img {
+  float: left;
+  width: 60px;
+  height: 90px;
+}
+.lt_main .cart_info {
+  overflow: hidden;
+  height: 90px;
+  padding: 0 10px;
+}
+.lt_main .cart_info p:first-child {
+  color: #000;
+}
+.lt_main .cart_info .cart_price span:first-child {
+  color: red;
+}
+.lt_main .cart_info .cart_price span:nth-child(2) {
+  color: #666666;
+  text-decoration: line-through;
+}

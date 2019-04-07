@@ -47,7 +47,8 @@ $(function () {
   $('#add_btn').click(function () {
     var size = $('.pro_size span.current').text();
     if (!size) {
-      mui.toast('请选择尺码')
+      mui.toast('请选择尺码');
+      return;
     }
     var num = $('.pro_num input').val();
     $.ajax({

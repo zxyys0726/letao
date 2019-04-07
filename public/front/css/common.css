@@ -153,6 +153,30 @@ img {
 .lt_container .lt_footer li a.current p {
   color: orange;
 }
+.pro_size {
+  text-align: left;
+}
+.pro_size span {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin: 3px 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+}
+.pro_size span.current {
+  background-color: orange;
+  color: #ffffff;
+}
+.pro_num {
+  text-align: left;
+}
+.pro_num span {
+  font-size: 12px;
+  color: #666;
+}
 @keyframes rotate {
   from {
     transform: translateX(-50%) rotate(0deg);
